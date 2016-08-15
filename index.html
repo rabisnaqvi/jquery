@@ -1,0 +1,30 @@
+<!--
+** Simple HTML Document Structure
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple jQuery Toggle</title>
+	<!-- Adding jQuery ***** REQUIRED ! ****** -->
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Button which will toggle the h1 tag and it will be targeted with jQuery -->
+	<button>Click Me to Toogle</button>
+<!-- H1 which will be toggle -->
+	<h1>This will be toggled</h1>
+<!-- Creating jQuery Functionality -->
+	<script type="text/javascript"> 
+	// document.ready function to initialize the script whenever page will be loaded completely.
+	$(document).ready(function(){
+	// function which will be perform when ever button will be clicked
+		$('button').click(function(){
+		// Hide and Show element with jQuery's toggle function
+			$('h1').toggle('100000');
+		});
+	});
+	</script>
+</body>
+</html>
+<!-- That's it !! you got it ! -->
